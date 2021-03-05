@@ -1,0 +1,89 @@
+/****************************** Colours *******************************/
+/******************************* Fonts **********************************/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+/**************************** Defaults **********************************/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.button {
+  display: inline;
+  border: 1px solid #ff52bf;
+  border-radius: 2em;
+  text-decoration: none;
+  color: #ff52bf;
+}
+
+@-webkit-keyframes lightButtonHover {
+  from {
+    color: #ff52bf;
+  }
+  to {
+    color: #ff8fd8;
+  }
+}
+
+@keyframes lightButtonHover {
+  from {
+    color: #ff52bf;
+  }
+  to {
+    color: #ff8fd8;
+  }
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row nowrap;
+          flex-direction: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.875em 1.5em;
+}
+
+.header__logo {
+  width: 6.25em;
+  height: 1em;
+}
+
+.header .button {
+  font-size: 0.625rem;
+  padding: 0.5em 2em;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  -webkit-transition: border-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    padding: 4em;
+  }
+  .header__logo {
+    width: 15em;
+    height: 2.5em;
+  }
+  .header .button {
+    font-size: 1rem;
+    padding: 0.5em 2em;
+  }
+  .header .button:hover {
+    border-color: #ff8fd8;
+    color: #ff8fd8;
+  }
+}
+/*# sourceMappingURL=style.css.map */
