@@ -6,14 +6,19 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
+h1,
+h2,
+h3 {
+  font-family: Popins, sans-serif;
+}
+
 .button {
-  display: inline;
   border: 1px solid #ff52bf;
   border-radius: 2em;
   text-decoration: none;
@@ -84,6 +89,61 @@
   .header .button:hover {
     border-color: #ff8fd8;
     color: #ff8fd8;
+  }
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5em 1em;
+  text-align: center;
+}
+
+.hero__heading {
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+}
+
+.hero__text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 2.25em 0.5em;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero__text {
+    font-size: 1.25rem;
+    width: 37.25em;
+  }
+}
+
+.hero__cta {
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #ff52bf;
+  color: white;
+  padding: 1em 2.5em;
+  border-radius: 4em;
+}
+
+.hero__cta:hover {
+  background-color: #ff8fd8;
+  border-color: #ff8fd8;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero__cta {
+    line-height: 0;
+    font-size: 1.25rem;
+    padding: 2em 6.25em;
   }
 }
 /*# sourceMappingURL=style.css.map */
