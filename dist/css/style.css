@@ -25,6 +25,35 @@ h3 {
   color: #ff52bf;
 }
 
+/************************* Helper ******************************************/
+.flex-col-rev {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.flex-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-row-rev {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 @-webkit-keyframes lightButtonHover {
   from {
     color: #ff52bf;
@@ -49,8 +78,8 @@ h3 {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row nowrap;
-          flex-direction: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -74,7 +103,7 @@ h3 {
   transition: border-color 0.2s ease-in-out;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 767px) {
   .header {
     padding: 4em;
   }
@@ -118,7 +147,7 @@ h3 {
   margin: 2.25em 0.5em;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 767px) {
   .hero__text {
     font-size: 1.25rem;
     width: 37.25em;
@@ -139,11 +168,29 @@ h3 {
   border-color: #ff8fd8;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 767px) {
   .hero__cta {
     line-height: 0;
     font-size: 1.25rem;
     padding: 2em 6.25em;
+  }
+}
+
+.hero__illustration {
+  height: 12.5em;
+  margin-top: 6.25em;
+  padding: 0 1.5em;
+}
+
+@media screen and (min-width: 767px) {
+  .hero__illustration {
+    height: 22.5em;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .hero__illustration {
+    height: 45em;
   }
 }
 /*# sourceMappingURL=style.css.map */

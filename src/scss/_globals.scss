@@ -32,3 +32,17 @@ h3 {
   text-decoration: none;
   color: $pink;
 }
+
+/************************* Helper ******************************************/
+.flex-col-rev {
+  flex-direction: column-reverse;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-row-rev {
+  flex-direction: row-reverse;
+}
+.flex-row {
+  flex-direction: row;
+}
