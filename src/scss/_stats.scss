@@ -1,0 +1,33 @@
+.stats {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  &__item {
+    padding: 1em 0 5.25em;
+    &__icon {
+      height: 1.5625em;
+    }
+    &__text {
+      text-align: center;
+      font-size: 2.8125rem;
+    }
+    &__description {
+      text-align: center;
+      font-size: 0.8125rem;
+      color: $grey;
+    }
+  }
+  @include media-tablet {
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 0 6.25em;
+    &__item {
+      &__text {
+        font-size: 5rem;
+      }
+      &__description {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

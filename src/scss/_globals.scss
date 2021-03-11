@@ -6,6 +6,7 @@ $lightRed: hsl(0, 100%, 63%);
 
 $veryDarkCyan: hsl(192, 100%, 9%);
 $veryPaleBlue: hsl(207, 100%, 98%);
+$grey: hsl(209, 11%, 59%);
 
 /******************************* Fonts **********************************/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
@@ -22,8 +23,10 @@ $veryPaleBlue: hsl(207, 100%, 98%);
 
 h1,
 h2,
-h3 {
+h3,
+.heading {
   font-family: Popins, sans-serif;
+  font-weight: bold;
 }
 
 .button {

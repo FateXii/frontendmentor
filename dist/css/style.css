@@ -14,8 +14,10 @@
 
 h1,
 h2,
-h3 {
+h3,
+.heading {
   font-family: Popins, sans-serif;
+  font-weight: bold;
 }
 
 .button {
@@ -191,6 +193,56 @@ h3 {
 @media screen and (min-width: 1023px) {
   .hero__illustration {
     height: 45em;
+  }
+}
+
+.stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stats__item {
+  padding: 1em 0 5.25em;
+}
+
+.stats__item__icon {
+  height: 1.5625em;
+}
+
+.stats__item__text {
+  text-align: center;
+  font-size: 2.8125rem;
+}
+
+.stats__item__description {
+  text-align: center;
+  font-size: 0.8125rem;
+  color: #8b97a2;
+}
+
+@media screen and (min-width: 767px) {
+  .stats {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0 6.25em;
+  }
+  .stats__item__text {
+    font-size: 5rem;
+  }
+  .stats__item__description {
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
