@@ -1,0 +1,55 @@
+.feature {
+  text-align: center;
+  padding: 8em 2.25em;
+  &__image {
+    width: 100%;
+    padding: 0 1em;
+  }
+  &__description {
+    margin-top: 5em;
+    &__heading {
+      font-size: 1.5rem;
+      margin: 1em 0;
+    }
+    &__text {
+      font-size: 0.85rem;
+    }
+  }
+  @include media-desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 12.5em;
+    padding: 8em 7.5em;
+    &__description {
+      text-align: left;
+      vertical-align: middle;
+      &__heading {
+        font-size: 2.8125rem;
+        margin: 0.5em 0;
+      }
+      &__text {
+        font-size: 1em;
+      }
+    }
+    &.rev &__image {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    &.rev &__description {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+}
+
+.bottom__cta {
+  text-align: center;
+  padding: 6.25rem 0;
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.625em;
+  }
+  .cta {
+    margin-top: 2.625em;
+  }
+}
