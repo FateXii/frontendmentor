@@ -120,9 +120,6 @@
     <!--
 
 
-  Ready To Build Your Community?
-  Get Started For Free
-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
   vestibulum a, ultrices quis sem.
   
@@ -135,13 +132,75 @@
 
   Subscribe -->
 
-    <footer>
+    <footer class="footer-container">
+      <div class="footer">
+        <div class="footer__newsletter">
+          <h2 class="footer__newsletter__heading heading">Newsletter</h2>
+          <p class="footer__newsletter__text">
+            To recieve tips on how to grow your community, sign up to our weekly
+            newsletter. We’ll never send you spam or pass on your email address
+          </p>
+          <form class="footer__newsletter__subscription-form">
+            <input
+              type="email"
+              name="email"
+              id="subscription-email"
+              class="footer__newsletter__subscription-form__email-input"
+            />
+            <input
+              type="button"
+              value="Subscribe"
+              class="footer__newsletter__subscription-form__button cta"
+            />
+          </form>
+        </div>
+        <div class="footer__contact">
+          <img
+            src="/images/logo-light.svg"
+            alt="huddle logo"
+            class="footer__contact__logo"
+          />
+          <p class="footer__contact__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+          </p>
+          <div class="footer__contact__info">
+            <img
+              src="/images/icon-phone.svg"
+              alt=""
+              class="footer__contact__info__icon"
+            />
+            <p class="footer__contact__info__details">Phone: +1-543-123-4567</p>
+          </div>
+          <div class="footer__contact__info">
+            <img
+              src="/images/icon-email.svg"
+              alt=""
+              class="footer__contact__info__icon"
+            />
+            <p class="footer__contact__info__details">example@huddle.com</p>
+          </div>
+          <div class="footer__contact__social">
+            <a href="#" class="footer__contact__social__icon">
+              <img src="/images/facebook.svg" alt="facebook logo" />
+            </a>
+            <a href="#" class="footer__contact__social__icon">
+              <img src="/images/twitter.svg" alt="twitter logo" />
+            </a>
+            <a href="#" class="footer__contact__social__icon">
+              <img src="/images/instagram.svg" alt="instagram logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="https://www.github.com/FateXii">Thendo</a>.
       </p>
-    </footer>
+    </div>
   </body>
 </html>

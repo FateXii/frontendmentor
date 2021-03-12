@@ -19,14 +19,11 @@
   }
 
   &__illustration {
-    height: 12.5em;
     margin-top: 6.25em;
     padding: 0 1.5em;
-    @include media-tablet {
-      height: 22.5em;
-    }
+    width: 100%;
     @include media-desktop {
-      height: 45em;
+      padding: 0 12.5em;
     }
   }
 }

@@ -1,6 +1,6 @@
 $min-tablet-width: 767px;
 $min-desktop-width: 1023px;
-$min-wide-desktop-width: 1439pxpx;
+$min-wide-desktop-width: 1439px;
 
 @mixin media-tablet {
   @media screen and (min-width: $min-tablet-width) {

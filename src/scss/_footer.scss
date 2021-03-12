@@ -1,0 +1,109 @@
+.footer-container {
+  margin-top: 11.25em;
+  border-top: 3.75em solid white;
+  border-image: url("/images/bg-footer-top-mobile.svg") 100% 0 0;
+  @include media-wide {
+    border-top: 9.375em solid white;
+    border-image: url("/images/bg-footer-top-desktop.svg") 100% 0 0;
+  }
+}
+.footer {
+  display: flex;
+  flex-flow: column nowrap;
+  @include media-desktop {
+    flex-flow: row-reverse nowrap;
+    justify-content: space-around;
+  }
+  width: 100%;
+  padding: 4.75em 1.875em 0;
+  background-color: $veryDarkCyan;
+  color: $veryPaleBlue;
+  &__newsletter {
+    @include media-desktop {
+      width: 32.5em;
+    }
+    &__heading {
+      text-transform: uppercase;
+      margin-bottom: 1.25em;
+    }
+    &__text {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      margin-bottom: 1.875em;
+      @include media-desktop {
+        padding-right: 11.5625em;
+      }
+    }
+    &__subscription-form {
+      display: flex;
+      flex-flow: column nowrap;
+      @include media-desktop {
+        flex-flow: row nowrap;
+      }
+      align-items: flex-end;
+      &__email-input {
+        width: 100%;
+        margin: 0 1em 0 0;
+        height: 3.125em;
+        display: inline-block;
+      }
+      &__button {
+        width: 50%;
+        height: 3.125em;
+        margin-top: 1.125em;
+        padding: 0;
+        font-size: 0.875rem;
+        font-weight: 400;
+        border-radius: 0.25em;
+        color: $veryPaleBlue;
+        background-color: $pink;
+        @include media-tablet {
+          align-self: center;
+        }
+      }
+    }
+  }
+  &__contact {
+    margin-top: 6.25em;
+    @include media-desktop {
+      margin-top: 0;
+      width: 32.5em;
+    }
+    &__logo {
+      margin-bottom: 1.5em;
+    }
+    &__text {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      @include media-desktop {
+        padding-right: 16em;
+      }
+    }
+    &__info {
+      display: flex;
+      flex-flow: row nowrap;
+      padding-top: 1.5em;
+      &:last-child {
+        padding-bottom: 1.5em;
+      }
+
+      &__icon {
+        width: 1.375em;
+        height: 1.375em;
+        margin-right: 1em;
+      }
+    }
+    &__social {
+      display: flex;
+      flex-flow: row nowrap;
+      margin: 3.375em 0;
+      &__icon {
+        margin-right: 1em;
+        img {
+          width: 1.375em;
+          height: 1.375em;
+        }
+      }
+    }
+  }
+}
